@@ -2,15 +2,22 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <!-- Prettier почему то ставит "/"" в конце одинарных тегов ?? -->
     <title>Интернет магазин «Nёrds»</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/180.png" />
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
     <header class="main-header">
       <nav>
         <a class="logo">
-          <img src="#" width="160" height="65" alt="Логотип Нёрдс" />
-          <!-- Prettier почему то ставит "/"" в конце одинарных тегов ?? -->
+          <img
+            src="img/nerds-logo.svg"
+            width="160"
+            height="65"
+            alt="Логотип Нёрдс. Перейти на главную страницу"
+          />
         </a>
         <ul>
           <li><a href="blank.html">Студия</a></li>
@@ -31,7 +38,7 @@
           приложения.
         </p>
         <a href="blank.html">УЗНАТЬ БОЛЬШЕ</a>
-        <img src="#" width="760" height="430" alt="картинка слайдера1" />
+        <img src="img/slider-bar/slide1.jpg" width="760" height="431" />
       </section>
       <section class="slider-bar2">
         <h2>Реклама</h2>
@@ -41,7 +48,8 @@
           пропорций
         </p>
         <a href="blank.html">УЗНАТЬ БОЛЬШЕ</a>
-        <img src="#" width="760" height="430" alt="картинка слайдера2" />
+        <img src="img/slider-bar/slide2.jpg" width="760" height="431" />
+        <!-- Я так понимаю тут есть превью к картинке и alt не нужен ?? -->
         <section class="slider-bar3">
           <h2>Реклама</h2>
           <p>Только ночь, только хардкор</p>
@@ -50,7 +58,7 @@
             только начинается.
           </p>
           <a href="blank.html">УЗНАТЬ БОЛЬШЕ</a>
-          <img src="#" width="760" height="430" alt="картинка слайдера3" />
+          <img src="img/slider-bar/slide3.jpg" width="760" height="431" />
         </section>
       </section>
       <section class="services">
@@ -59,7 +67,11 @@
           <li>
             <h3>Веб-сайты</h3>
             <p>
-              <img src="#" width="300" height="146" alt="Веб-сайты" />
+              <img
+                src="img/services/illustration1.png"
+                width="300"
+                height="146"
+              />
             </p>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a href="blank.html">Заказать</a>
@@ -67,7 +79,11 @@
           <li>
             <h3>Приложения</h3>
             <p>
-              <img src="#" width="300" height="146" alt="Приложения" />
+              <img
+                src="img/services/illustration2.png"
+                width="300"
+                height="146"
+              />
             </p>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
             <a href="blank.html">Заказать</a>
@@ -75,7 +91,11 @@
           <li>
             <h3>Презентации</h3>
             <p>
-              <img src="#" width="300" height="146" alt="Презентации" />
+              <img
+                src="img/services/illustration3.png"
+                width="300"
+                height="146"
+              />
             </p>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
             <a href="blank.html">Заказать</a>
@@ -97,7 +117,7 @@
         </ul>
       </section>
       <section class="quality">
-        <img src="#" alt="Нёрдс" />
+        <img src="img/nerds-illustration.png" alt="Нёрдс" />
         <p>с 2004 года Любим точность во всем:</p>
         <table>
           <tr>
@@ -116,18 +136,50 @@
         <h2>Производители</h2>
         <ul>
           <li>
-            <a href="blank.html"><img src="#" alt="html Academy" /></a>
+            <a href="blank.html"
+              ><img
+                src="img/companies/htmlacademy.svg"
+                width="199"
+                height="57"
+                alt="html Academy"
+            /></a>
           </li>
           <li>
-            <a href="blank.html"><img src="#" alt="barbershop borodinski" /></a>
+            <a href="blank.html"
+              ><img
+                src="img/companies/barbershop.png"
+                width="209"
+                height="90"
+                alt="barbershop borodinski"
+            /></a>
           </li>
           <li>
-            <a href="blank.html"><img src="#" alt="pink" /></a>
+            <a href="blank.html"
+              ><img
+                src="img/companies/pink.png"
+                width="185"
+                height="52"
+                alt="pink"
+            /></a>
           </li>
           <li>
-            <a href="blank.html"><img src="#" alt="mishka" /></a>
+            <a href="blank.html"
+              ><img
+                src="img/companies/mishka.png"
+                width="173"
+                height="84"
+                alt="mishka"
+            /></a>
           </li>
         </ul>
+      </section>
+      <section class="map">
+        <img
+          src="img/map.jpg"
+          width="1440"
+          height="416"
+          alt="Адрес офиса: наб. Реки Карповки,5 лит П, Санкт-Петербург "
+        />
       </section>
     </main>
     <footer class="main-footer">
@@ -136,7 +188,7 @@
         <p>NЁRDS DESIGN STUDIO</p>
         <p>
           наб. Реки Карповки,5 лит П, Санкт-Петербург
-          <a href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           <a href="blank.html">Напишите нам</a>
         </p>
       </section>
