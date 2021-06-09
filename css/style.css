@@ -1,0 +1,168 @@
+:root {
+  --basic-color: #eeeeee;
+  --background-color: #ffffff;
+  --button-color-red: #fb565a;
+  --button-color-green: #00ca74;
+  --button-color-yellow: #efc849;
+  --button-color-social: #e1e1e1;
+  --button-color-white: #FFFFFF;
+  --button-hover-red: #E74246;
+  --button-hover-green:#00BC6C;
+  --button-hover-yellow:#EAB534;
+  --button-focus-red: #D7373B;
+  --button-focus-green: #00AA62;
+  --button-focus-yellow:#E5A722;
+  --basic-color-text: #283136;
+  --hover-color-text: #FB565A;
+  --focus-color-text: #000000;
+  --black-color-text: #000000;
+}
+.page-body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-color-text);
+  background-color: var(--background-color);
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.main-header,.slider-1,.slider-2,.slider-3 {
+  background-color: var(--basic-color);
+}
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--black-color-text);
+  font-weight: 500;
+
+}
+.navigation-list a:not([href]) {
+  border-bottom: 2px solid var(--hover-color-text) ;
+  padding-bottom: 13px ;
+}
+.navigation-list a, .basket {
+  color: var(--basic-color-text);
+
+}
+.navigation-list a:hover, .basket:hover {
+  color: var(--hover-color-text);
+}
+.navigation-list a:focus, .basket:focus {
+  color: var(--hover-color-text), opacity:30% ;
+  opacity:30%;
+}
+
+.servisec-list {
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--black-color-text);
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+.about-tittle {
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--black-color-text);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.button {
+  font: inherit;
+  text-transform: uppercase;
+  color: var(--button-color-white);
+  font-weight: 500;
+  text-align: center;
+  vertical-align: center;
+}
+.button:focus {
+  opacity: 30%;
+}
+.red-btn{
+background-color: var(--button-color-red);
+}
+.green-btn {
+ background-color: var(--button-color-green);
+}
+.yellow-btn {
+  background-color: var(--button-color-yellow);
+}
+.red-btn:hover {
+background-color: var(--button-hover-red);
+}
+.red-btn:focus {
+  background-color:var(--button-focus-red) ;
+}
+.green-btn:hover {
+  background-color:var(--button-hover-green) ;
+}
+.green-btn:focus {
+  background-color: var(--button-focus-green);
+}
+.yellow-btn:hover {
+  background-color:var(--button-hover-yellow) ;
+}
+.yellow-btn:focus {
+  background-color:var(--button-focus-yellow) ;
+}
+.about-tittle {
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--black-color-text);
+  font-weight: 500;
+}
+.about-text,.featuers p  {
+  color: var(--basic-color-text);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.features-item th {
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--black-color-text);
+  font-weight: 700;
+}
+.features-item sup {
+  font-size: 26px;
+  line-height: 40px;
+  color: var(--black-color-text);
+  font-weight: 700;
+}
+.contacts-text {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--black-color-text);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.contacts-phone, .social-list a {
+  color: inherit;
+}
+.discount h2 {
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--black-color-text);
+  font-weight: 700;
+}
