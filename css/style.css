@@ -16,6 +16,9 @@
   --hover-color-text: #FB565A;
   --focus-color-text: #000000;
   --black-color-text: #000000;
+  --filter-button-hover: #DFDFDF;
+  --filter-button-focus:#D5D5D5;
+  --catalog-color-text:#666666;
 }
 .page-body {
   min-width: 960px;
@@ -47,7 +50,7 @@ ul {
   height: 1px;
   margin: -1px;
 }
-.main-header,.slider-1,.slider-2,.slider-3 {
+.main-header,.slider-1,.slider-2,.slider-3, .shop {
   background-color: var(--basic-color);
 }
 .main-navigation {
@@ -99,6 +102,18 @@ ul {
 }
 .button:focus {
   opacity: 30%;
+}
+.filter-button {
+   color:var(--black-color-text) ;
+   background-color: var(--background-color);
+}
+.filter-button:hover {
+  background-color: var(--filter-button-hover);
+}
+.filter-button:focus {
+  background-color: var(--filter-button-focus);
+  opacity: 0.3;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 .red-btn{
 background-color: var(--button-color-red);
@@ -165,4 +180,56 @@ background-color: var(--button-hover-red);
   line-height: 36px;
   color: var(--black-color-text);
   font-weight: 700;
+}
+.shop h1 {
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--black-color-text);
+  font-weight: 500;
+}
+.filter legend, .templates-subject, .catalog-item h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--black-color-text);
+}
+.filter ul {
+  line-height: 20px;
+}
+
+.templates-link a  {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--black-color-text);
+  opacity: 0.3;
+}
+.templates-link a:focus, .templates-link .templates-link-current {
+  opacity: 1;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.templates-link a:hover {
+  opacity: 0.6;
+}
+.catalog-item-text {
+  line-height: 18px;
+  color: var(--catalog-color-text);
+}
+.pagination-item a {
+  color: var(--black-color-text);
+  background-color: var(--basic-color);
+}
+.pagination-item a:hover {
+  background-color: var(--filter-button-hover);
+}
+.pagination-item a:focus {
+  background-color: var(--filter-button-focus);
+  opacity: 0.3;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+.pagination-item-current a {
+  background-color: rgba(0, 0, 0, 0.0001);
+  border: 3px solid #DBDBDB;
 }
